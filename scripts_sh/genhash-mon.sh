@@ -6,10 +6,10 @@ jahr=$(date +%Y)
 # echo $monat
 
 echo wechsele Verzeichnis ...
-cd ~/transfer/AMEdata/Backup/
+cd ~/transfer/FOLDER/Backup/
 
 echo erstelle hash ...
-sha512sum AMEbackup_$jahr-$monat.7z AMEbackup_$jahr-$monat.log > AMEbackup_$jahr-$monat.sha512
+sha512sum FOLDERbackup_$jahr-$monat.7z FOLDERbackup_$jahr-$monat.log > FOLDERbackup_$jahr-$monat.sha512
 
 echo pruefe hash ...
-sha512sum -c AMEbackup_$jahr-$monat.sha512
+sha512sum -c FOLDERbackup_$jahr-$monat.sha512
